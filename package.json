@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "prisma migrate deploy",
+    "generate": "prisma generate",
     "build": "prisma migrate deploy && prisma generate && npm run generate && tsc"
   },
   "author": "",
