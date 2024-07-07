@@ -1,0 +1,18 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+model refferalSchema {
+  id   Int    @id @default(autoincrement())
+  Referrer_name String
+  Referrer_email String
+  Referee_name String
+  Referee_email String
+  courseName String 
+  
+} 
